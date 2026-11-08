@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rechteck-Profi – Umfang & Flächeninhalt</title>
+
+<style>
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:Arial,Helvetica,sans-serif;
+    background:linear-gradient(135deg,#d7f4ff,#f7ffd7);
+    color:#234;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:20px;
+}
+
+h1{
+    text-align:center;
+    color:#0b5d6b;
+    margin-bottom:5px;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    padding:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+}
+
+.topbar{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.badge{
+    background:#e8f7ff;
+    padding:10px 15px;
+    border-radius:999px;
+    font-weight:bold;
+}
+
+.question{
+    font-size:1.25rem;
+    line-height:1.6;
+    margin-bottom:15px;
+}
+
+.rectangle{
+    width:240px;
+    height:150px;
+    border:4px solid #2b7a78;
+    background:#dff8f4;
+    margin:25px auto;
+    position:relative;
+    border-radius:10px;
+}
+
+.topLabel{
+    position:absolute;
+    top:-30px;
+    left:50%;
+    transform:translateX(-50%);
+    font-weight:bold;
+}
+
+.sideLabel{
+    position:absolute;
+    left:-80px;
+    top:50%;
+    transform:translateY(-50%);
+    font-weight:bold;
+}
+
+.options{
+    display:grid;
+    gap:12px;
+}
+
+.option{
+    padding:14px;
+    border:none;
+    border-radius:12px;
+    background:#eef3ff;
+    cursor:pointer;
+    font-size:1rem;
+    text-align:left;
+}
+
+.option:hover{
+    background:#dfe7ff;
+}
+
+.correct{
+    background:#9be8a4 !important;
+}
+
+.wrong{
+    background:#ffb3b3 !important;
+}
+
+.feedback{
+    min-height:30px;
+    margin-top:15px;
+    font-weight:bold;
+}
+
+.nextBtn{
+    display:none;
+    margin-top:15px;
+    padding:12px 20px;
+    border:none;
+    border-radius:12px;
+    background:#2b7a78;
+    color:white;
+    cursor:pointer;
+}
+
+.nextBtn:hover{
+    background:#225f5d;
+}
+
+.result{
+    text-align:center;
+}
+
+.result button{
+    padding:14px 24px;
+    border:none;
+    border-radius:12px;
+    background:#ffb703;
+    font-size:1rem;
+    font-weight:bold;
+    cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>📐 Rechteck-Profi</h1>
+    <div class="subtitle">
+        Umfang, Flächeninhalt und Einheiten umrechnen
+    </div>
+
+    <div class="card">
+        <div id="app"></div>
+    </div>
+
+</div>
+
+<script>
+
+const lengthUnits = [
+    {u:"cm", f:1},
+    {u:"dm", f:10},
+    {u:"m",  f:100}
+];
+
+const areaUnits = [
+    {u:"cm²", f:1},
+    {u:"dm²", f:100},
+    {u:"m²",  f:10000}
+];
+
+let questions=[];
+let current=0;
+let score=0;
+
+function rand(min,max){
+    return Math.floor(Math.random()*(max-min+1))+min;
+}
+
+function shuffle(arr){
+    return [...arr].sort(()=>Math.random()-0.5);
+}
+
+function formatNumber(n){
+    if(Number.isInteger(n)) return n.toString();
+    return n.toFixed(2).replace(".",",");
+}
+
+function toDisplay(n){
+    return formatNumber(n);
+}
+
+function convertLength(cm,target){
+    return cm/target.f;
+}
+
+function convertArea(cm2,target){
+    return cm2/target.f;
+}
+
+function createOptions(correctText){
+
+    const options = new Set();
+    options.add(correctText);
+
+    const match = correctText.match(/^([\d,.]+)\s*(.*)$/);
+
+    const value = parseFloat(match[1].replace(",","."));
+    const unit = match[2];
+
+    while(options.size<4){
+
+        let delta = rand(-8,8);
+
+        if(delta===0) continue;
+
+        let newVal = value + delta;
+
+        if(newVal<=0) continue;
+
+        options.add(toDisplay(newVal)+" "+unit);
+    }
+
+    return shuffle([...options]);
+}
+
+function generateTask(){
+
+    const taskType = rand(1,4);
+
+    const a_cm = rand(2,30)*10;
+    const b_cm = rand(2,30)*10;
+
+    const unitA = lengthUnits[rand(0,lengthUnits.length-1)];
+    const unitB = lengthUnits[rand(0,lengthUnits.length-1)];
+
+    const displayA = toDisplay(convertLength(a_cm,unitA))+" "+unitA.u;
+    const displayB = toDisplay(convertLength(b_cm,unitB))+" "+unitB.u;
+
+    const area_cm2 = a_cm*b_cm;
+    const perimeter_cm = 2*(a_cm+b_cm);
+
+    if(taskType===1){
+
+        const answerUnit = areaUnits[rand(0,areaUnits.length-1)];
+
+        const answer =
+            toDisplay(convertArea(area_cm2,answerUnit))
+            +" "+answerUnit.u;
+
+        return {
+            text:"Berechne den Flächeninhalt des Rechtecks.",
+            top:displayA,
+            side:displayB,
+            correct:answer
+        };
+    }
+
+    if(taskType===2){
+
+        const answerUnit = lengthUnits[rand(0,lengthUnits.length-1)];
+
+        const answer =
+            toDisplay(convertLength(perimeter_cm,answerUnit))
+            +" "+answerUnit.u;
+
+        return {
+            text:"Berechne den Umfang des Rechtecks.",
+            top:displayA,
+            side:displayB,
+            correct:answer
+        };
+    }
+
+    if(taskType===3){
+
+        const answerUnit = lengthUnits[rand(0,lengthUnits.length-1)];
+
+        const perimeterUnit = lengthUnits[rand(0,lengthUnits.length-1)];
+
+        const perimeterDisplay =
+            toDisplay(convertLength(perimeter_cm,perimeterUnit))
+            +" "+perimeterUnit.u;
+
+        const missingTop = Math.random()<0.5;
+
+        const answer =
+            missingTop
+            ? toDisplay(convertLength(a_cm,answerUnit))+" "+answerUnit.u
+            : toDisplay(convertLength(b_cm,answerUnit))+" "+answerUnit.u;
+
+        return {
+            text:
+            "Der Umfang beträgt <b>"+perimeterDisplay+
+            "</b>. Wie lang ist die fehlende Seite?",
+            top: missingTop ? "?" : displayA,
+            side: missingTop ? displayB : "?",
+            correct:answer
+        };
+    }
+
+    const answerUnit = lengthUnits[rand(0,lengthUnits.length-1)];
+    const areaUnit = areaUnits[rand(0,areaUnits.length-1)];
+
+    const areaDisplay =
+        toDisplay(convertArea(area_cm2,areaUnit))
+        +" "+areaUnit.u;
+
+    const missingTop = Math.random()<0.5;
+
+    const answer =
+        missingTop
+        ? toDisplay(convertLength(a_cm,answerUnit))+" "+answerUnit.u
+        : toDisplay(convertLength(b_cm,answerUnit))+" "+answerUnit.u;
+
+    return {
+        text:
+        "Der Flächeninhalt beträgt <b>"+areaDisplay+
+        "</b>. Wie lang ist die fehlende Seite?",
+        top: missingTop ? "?" : displayA,
+        side: missingTop ? displayB : "?",
+        correct:answer
+    };
+}
+
+function generateQuestions(){
+
+    const arr=[];
+
+    for(let i=0;i<20;i++){
+        arr.push(generateTask());
+    }
+
+    return arr;
+}
+
+function renderQuestion(){
+
+    const q = questions[current];
+    const options = createOptions(q.correct);
+
+    document.getElementById("app").innerHTML = `
+        <div class="topbar">
+            <div class="badge">Aufgabe ${current+1} / ${questions.length}</div>
+            <div class="badge">⭐ ${score} Punkte</div>
+        </div>
+
+        <div class="question">${q.text}</div>
+
+        <div class="rectangle">
+            <div class="topLabel">${q.top}</div>
+            <div class="sideLabel">${q.side}</div>
+        </div>
+
+        <div class="options">
+            ${options.map(o=>
+                `<button class="option" onclick="checkAnswer(this,'${o}')">${o}</button>`
+            ).join("")}
+        </div>
+
+        <div class="feedback" id="feedback"></div>
+
+        <button class="nextBtn" id="nextBtn" onclick="nextQuestion()">
+            Nächste Aufgabe ➜
+        </button>
+    `;
+}
+
+function checkAnswer(btn,answer){
+
+    const q = questions[current];
+    const buttons = document.querySelectorAll(".option");
+
+    buttons.forEach(b=>b.disabled=true);
+
+    buttons.forEach(b=>{
+        if(b.textContent===q.correct){
+            b.classList.add("correct");
+        }
+    });
+
+    if(answer===q.correct){
+        btn.classList.add("correct");
+        score++;
+        document.getElementById("feedback").innerHTML="✅ Richtig!";
+    }else{
+        btn.classList.add("wrong");
+        document.getElementById("feedback").innerHTML=
+        "❌ Richtig wäre: <b>"+q.correct+"</b>";
+    }
+
+    document.getElementById("nextBtn").style.display="inline-block";
+}
+
+function nextQuestion(){
+
+    current++;
+
+    if(current>=questions.length){
+        showResult();
+    }else{
+        renderQuestion();
+    }
+}
+
+function showResult(){
+
+    const percent = Math.round(score/questions.length*100);
+
+    let text="";
+
+    if(percent>=90){
+        text="🏆 Super! Du bist ein echter Rechteck-Profi!";
+    }else if(percent>=70){
+        text="🌟 Sehr gut gemacht!";
+    }else if(percent>=50){
+        text="👍 Gut geschafft!";
+    }else{
+        text="📚 Weiter üben lohnt sich!";
+    }
+
+    document.getElementById("app").innerHTML=`
+        <div class="result">
+            <h2>${text}</h2>
+            <p>Du hast <b>${score}</b> von <b>${questions.length}</b> Aufgaben richtig gelöst.</p>
+            <p><b>${percent}%</b></p>
+            <button onclick="restartQuiz()">🔄 Neue Aufgaben</button>
+        </div>
+    `;
+}
+
+function restartQuiz(){
+    score=0;
+    current=0;
+    questions=generateQuestions();
+    renderQuestion();
+}
+
+questions=generateQuestions();
+renderQuestion();
+
+</script>
+
+</body>
+</html>
