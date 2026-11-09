@@ -16,6 +16,15 @@ link:     https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css
 script:   https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js
 -->
 
+<!--
+@Antwort: <details>
+  <summary><strong>Antwort anzeigen</strong></summary>
+
+  @0
+
+  </details>
+-->
+
 # 1.1 Zahlsysteme - Aufgaben
 
 Auf dieser Seite finden Sie Aufgaben zum Thema Zahlsyssteme für den Informatik GK Klasse 11 - Sachsen mit interaktiver Lösungseingabe bzw. Anzeigemöglichkeit der Lösung.
@@ -141,3 +150,13 @@ $42 + 242 = 16^2$
 
 $\rightarrow$ im [[8]]er-System
 
+## Aufgabe
+
+Schreibe eine Funktion, die eine Zahl quadriert.
+
+@Antwort(```python
+def quadrat(x):
+    return x ** 2
+
+print(quadrat(5))
+```)
