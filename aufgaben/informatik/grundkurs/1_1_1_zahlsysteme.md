@@ -18,6 +18,8 @@ script:   https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js
 
 # 1.1 Zahlsysteme - Aufgaben
 
+Auf dieser Seite finden Sie Aufgaben zum Thema Zahlsyssteme für den Informatik GK Klasse 11 - Sachsen mit interaktiver Lösungseingabe bzw. Anzeigemöglichkeit der Lösung.
+
 ## Aufgabe 1  
 Wandeln Sie die folgenden Dualzahlen in Dezimalzahlen um:
 
@@ -94,7 +96,11 @@ Für eine Webseite wurden folgende Farben ausgewählt. Die Angabe der Farben erf
 
         ([[00110100,01000110,01001000]])
 
-- c) Nennen Sie den Vorteil der Darstellung der Farben im Hexadezimalsystem.
+- c) Nennen Sie den Vorteil der Darstellung der Farben im Hexadezimalsystem.<details>
+<summary>Antwort anzeigen</summary>
+- kompakte und vom Menschen relativ gut lesbare Darstellung<br>
+- leichte Konvertierung ins Dualsystem 
+</details>
 
  
 ## Aufgabe 8
@@ -108,8 +114,7 @@ In der Netzwerktechnik spielen MAC-Adressen von Netzwerkadaptern eine wichtige R
 
         D4:3D:7E:38:3B:33 = [[11010100:00111101:01111110:00111000:00111011:00110011]]
 
-- b) Bestimmen Sie mit Hilfe des [Links](https://www.dein-ip-check.de/tools/macfinder) den Hersteller!
-<details>
+- b) Bestimmen Sie mit Hilfe des [Links](https://www.dein-ip-check.de/tools/macfinder) den Hersteller!<details>
 <summary>Antwort anzeigen</summary>
 Micro-Star Int'l Co, Ltd
 </details>
@@ -122,7 +127,10 @@ Micro-Star Int'l Co, Ltd
 - b) Berechnen Sie die entsprechenden Werte im Dezimalsystem.
     - [[128]] bzw. [[65535]]
 
-- c) Definieren Sie einen Zusammenhang zwischen der Basis des Zahlensystems und der Anzahl der darstellbaren Werte im Dezimalsystem.
+- c) Definieren Sie einen Zusammenhang zwischen der Basis des Zahlensystems und der Anzahl der darstellbaren Werte im Dezimalsystem.<details>
+<summary>Antwort anzeigen</summary>
+Wenn $b$ die Basis des Zahlsystems ist und $n$ die Anzahl der Stellen, dann lassen sich $b^n$ Zahlen darstellen.
+</details>
 
 
 
