@@ -14,16 +14,10 @@ comment: Aufgaben zum Thema Zahlsysteme im GK Informatik.
 link:     https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css
 
 script:   https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js
+
+
 -->
 
-<!--
-@Antwort: <details>
-  <summary><strong>Antwort anzeigen</strong></summary>
-
-  @0
-
-  </details>
--->
 
 # 1.1 Zahlsysteme - Aufgaben
 
@@ -150,13 +144,27 @@ $42 + 242 = 16^2$
 
 $\rightarrow$ im [[8]]er-System
 
+
+
+
 ## Aufgabe
 
 Schreibe eine Funktion, die eine Zahl quadriert.
 
-@Antwort(```python
+[[!]]
+<script>
+  false;
+</script>
+
+**************************************************
+### Musterlösung
+
+```python
 def quadrat(x):
     return x ** 2
 
 print(quadrat(5))
-```)
+```
+
+Die Ausgabe lautet **25**.
+**************************************************
