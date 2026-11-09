@@ -151,13 +151,12 @@ $\rightarrow$ im [[8]]er-System
 
 Schreibe eine Funktion, die eine Zahl quadriert.
 
+
 [[!]]
 <script>
-  false;
+  true;
 </script>
-
-**************************************************
-### Musterlösung
+****************************************
 
 ```python
 def quadrat(x):
@@ -166,5 +165,4 @@ def quadrat(x):
 print(quadrat(5))
 ```
 
-Die Ausgabe lautet **25**.
-**************************************************
+****************************************
