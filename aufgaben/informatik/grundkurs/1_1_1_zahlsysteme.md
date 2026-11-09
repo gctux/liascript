@@ -109,7 +109,10 @@ In der Netzwerktechnik spielen MAC-Adressen von Netzwerkadaptern eine wichtige R
         D4:3D:7E:38:3B:33 = [[11010100:00111101:01111110:00111000:00111011:00110011]]
 
 - b) Bestimmen Sie mit Hilfe des [Links](https://www.dein-ip-check.de/tools/macfinder) den Hersteller!
-
+<details>
+<summary>Antwort anzeigen</summary>
+Micro-Star Int'l Co, Ltd
+</details>
 
 ## Aufgabe 9
 
