@@ -147,22 +147,4 @@ $\rightarrow$ im [[8]]er-System
 
 
 
-## Aufgabe
 
-Schreibe eine Funktion, die eine Zahl quadriert.
-
-
-[[!]]
-<script>
-  true;
-</script>
-****************************************
-
-```python
-def quadrat(x):
-    return x ** 2
-
-print(quadrat(5))
-```
-
-****************************************
