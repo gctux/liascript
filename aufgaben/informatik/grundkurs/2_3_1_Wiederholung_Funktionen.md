@@ -30,7 +30,7 @@ Auf dieser Seite finden Sie Aufgaben zum Thema Wiederholung Funktionen für den 
 <script>
   true;
 </script>
-****
+****************************************
 ```python
 import random
 
