@@ -28,6 +28,7 @@ Auf dieser Seite finden Sie Aufgaben zum Thema Listen in Python für den Informa
 Informieren Sie sich unter https://de.w3docs.com/learn-python/python-lists über weitere Python-Listenfunktionen. Notieren Sie einige!
 
 
+
 ## Aufgabe 2
 
 Welche Ausgabe erfolgt jeweils bei den einzelnen **print**-Anweisungen? Überprüfe jeweils in einer Pythonshell!
@@ -43,7 +44,30 @@ Welche Ausgabe erfolgt jeweils bei den einzelnen **print**-Anweisungen? Überpr�
 >>> print(liste[:5])
 
 >>> print(liste[3:])
+
 ```
+
+
+[[!]]
+<script>
+  true;
+</script>
+****************************************
+```python
+>>> liste = [2, 7, 15, 28, 45, 12, 17, 33]
+>>> print(liste)
+[2, 7, 15, 28, 45, 12, 17, 33]
+>>> print(liste[5])
+12
+>>> print(liste[3:7])
+[28, 45, 12, 17]
+>>> print(liste[:5])
+[2, 7, 15, 28, 45]
+>>> print(liste[3:])
+[28, 45, 12, 17, 33]
+```
+****************************************
+
 
 ## Aufgabe 3
 
@@ -56,7 +80,26 @@ Welche Ausgabe erfolgt jeweils bei den einzelnen **print**-Anweisungen? Überpr�
 >>> print(liste[0][3])
 
 >>> print(liste[1][:2])
+
 ```
+
+[[!]]
+<script>
+  true;
+</script>
+****************************************
+```python
+>>> liste=[[2,1,4,5],[3,2,1,8]]
+>>> print(liste[1])
+[3, 2, 1, 8]
+>>> print(liste[0][3])
+5
+>>> print(liste[1][:2])
+[3, 2]
+```
+****************************************
+
+
 
 ## Aufgabe 4
 
@@ -75,7 +118,31 @@ Welche Ausgabe erfolgt jeweils bei den einzelnen **print**-Anweisungen? Beachte,
 
 >>> del(liste[5:])
 >>> print(liste)
+
 ```
+
+
+[[!]]
+<script>
+  true;
+</script>
+****************************************
+```python
+>>> liste=[12,15,21,13,17,9,6,14]
+>>> liste[4]=88
+>>> print(liste)
+[12, 15, 21, 13, 88, 9, 6, 14]
+>>> liste.append(16)
+>>> print(liste)
+[12, 15, 21, 13, 88, 9, 6, 14, 16]
+>>> del(liste[3])
+>>> print(liste)
+[12, 15, 21, 88, 9, 6, 14, 16]
+>>> del(liste[5:])
+>>> print(liste)
+[12, 15, 21, 88, 9]
+```
+****************************************
 
 ## Aufgabe 5
 
@@ -85,6 +152,26 @@ Importieren Sie das Paket random (import random). Erstellen anschließend ein Ar
 
 Kleiden Sie den Algorithmus in eine Endlosschleife ein, der bei jedem Durchlauf fragt, ob ein weiteres Passwort erzeugt werden soll!
 
+[[!]]
+<script>
+  true;
+</script>
+****************************************
+```python
+import random
+
+adj=["rote","grüne","heiße","kalte","dicke"]
+nomen=["Tomaten","Gurken","Nudeln","Kartoffeln","Bäume"]
+
+while True:
+    pw=adj[random.randint(0,4)]+nomen[random.randint(0,4)]+str(random.randint(1,100))
+    print(pw)
+    if (input("Noch ein Passwort? (j|n)")).lower() == "n":
+        break
+```
+****************************************
+
+
 ## Aufgabe 6
 
 An seinem 75. Geburtstag entschied ein König, dass er einige seiner Gefangenen begnadigen wollte. Er hatte einen Kerker mit 1000 Zellen. In jeder Zelle saß genau ein Gefangener. Er gab seinem Diener die Anweisung, 1000mal durch den Kerker zu gehen. Beim ersten Durchgang sollte er den Schlüssel in jedem Schloss umdrehen, beim zweiten Durchgang in jedem zweiten Schloss, ..., beim n. Durchgang in jedem n. Schloss. Die Schlösser schließen immer abwechselnd auf und zu. Am Anfang waren alle Schlösser geschlossen. Nach dem 1000. Durchgang sollten sich die Wachen aus dem Kerker begeben, damit alle Gefangenen, deren Tür dann offen war, fliehen konnten.  
@@ -92,3 +179,23 @@ Bestimme mit Hilfe eines Programms und der Verwendung von Listen, wie viele Gefa
 
 
 Quelle: https://www.logisch-gedacht.de/matheraetsel/kerker/
+
+[[!]]
+<script>
+  true;
+</script>
+****************************************
+```python
+liste = [0] * 1000
+
+for i in range(1000):
+    for j in range(1000):
+        if (j+1)%(i+1) == 0:
+            if liste[j] == 0:
+                liste[j] = 1
+            else:
+                liste[j] = 0
+
+print(liste.count(1),"Gefangene kommen frei!")
+```
+****************************************
