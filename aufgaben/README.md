@@ -10,6 +10,7 @@
 - [1.1.1 Zahlsysteme](https://liascript.github.io/course/?https://raw.githubusercontent.com/gctux/liascript/main/aufgaben/informatik/grundkurs/1_1_1_zahlsysteme.md)
 - [1.1.2 Zahlformate](https://liascript.github.io/course/?https://raw.githubusercontent.com/gctux/liascript/main/aufgaben/informatik/grundkurs/1_1_2_zahlformate.md)
 - [1.1.3 Zeichencodierung](https://liascript.github.io/course/?https://raw.githubusercontent.com/gctux/liascript/main/aufgaben/informatik/grundkurs/1_1_3_zeichencodierung.md)
+- [1.1.4 Boolsche Algebra](https://liascript.github.io/course/?https://raw.githubusercontent.com/gctux/liascript/main/aufgaben/informatik/grundkurs/1_1_4_boolsche_algebra.md)
 - [1.2.1 Erstellen von Schaltnetzen](https://liascript.github.io/course/?https://raw.githubusercontent.com/gctux/liascript/main/aufgaben/informatik/grundkurs/1_2_1_erstellen_von_schaltnetzen.md)
 - [1.2.2 Schaltnetzanalyse](https://liascript.github.io/course/?https://raw.githubusercontent.com/gctux/liascript/main/aufgaben/informatik/grundkurs/1_2_2_schaltnetzanalyse.md)
 - [1.2.3 Anwendung von Schaltnetzen](https://liascript.github.io/course/?https://raw.githubusercontent.com/gctux/liascript/main/aufgaben/informatik/grundkurs/1_2_3_anwendungen.md)
@@ -23,4 +24,3 @@
 - [2.2.1 Listen](https://liascript.github.io/course/?https://raw.githubusercontent.com/gctux/liascript/main/aufgaben/informatik/grundkurs/2_2_1_Listen.md)
 - [2.2.2 Zeichenketten](https://liascript.github.io/course/?https://raw.githubusercontent.com/gctux/liascript/main/aufgaben/informatik/grundkurs/2_2_2_Zeichenketten.md)
 - [2.3.1 Wiederholung Funktionen](https://liascript.github.io/course/?https://raw.githubusercontent.com/gctux/liascript/main/aufgaben/informatik/grundkurs/2_3_1_Wiederholung_Funktionen.md)
-
