@@ -81,6 +81,7 @@ $A$: Ich gehe zur Schule.
 $B$: Die Sonne scheint.
 
 Formulieren Sie die folgenden Verknüpfungen von Aussagefunktionen in Worten:
+
 - a) $\overline{A} \vee B$ 
 
 <details>
@@ -100,7 +101,7 @@ Ich gehe zur Schule und die Sonne scheint nicht.
 <details>
 <summary>Antwort anzeigen</summary>
 Es stimmt nicht, dass ich zur Schule gehe oder  die Sonne scheint, und ich gehe zur Schule. 
-</summary>
+</details>
 
 - d) $\overline{A \wedge B}$ 
 
@@ -121,19 +122,24 @@ Erstellen Sie für die folgenden logischen Ausdrücke die Wahrheitstabelle!
   true;
 </script>
 ****************************************
-
 | $A$ | $B$ | $A \vee B$ | $\overline{A \wedge B}$ | $(A \vee B) \wedge \overline{A \vee B}$ |
 | --- | --- | ---------- | ----------------------- | --------------------------------------- |
 | 0   | 0   | 0          | 1                       | 0                                       |
 | 0   | 1   | 1          | 1                       | 1                                       |
 | 1   | 0   | 1          | 1                       | 1                                       |
 | 1   | 1   | 1          | 0                       | 0                                       |
-
 ****************************************
 
 
 - b) $(A \wedge B)\vee \overline C$
 
+
+
+[[!]]
+<script>
+  true;
+</script>
+****************************************
 | $A$ | $B$ | $C$ | $A \wedge B$ | $\overline C$ | $(A \wedge B)\vee \overline C$ |
 | --- | --- | --- | ------------ | ------------- | ------------------------------ |
 | 0   | 0   | 0   | 0            | 1             | 1                              |
@@ -144,9 +150,16 @@ Erstellen Sie für die folgenden logischen Ausdrücke die Wahrheitstabelle!
 | 1   | 0   | 1   | 0            | 0             | 0                              |
 | 1   | 1   | 0   | 1            | 1             | 1                              |
 | 1   | 1   | 1   | 1            | 0             | 1                              |
+****************************************
 
 - c) $(A \wedge B) \vee \overline{A \wedge B}$
 
+
+[[!]]
+<script>
+  true;
+</script>
+****************************************
 | $A$ | $B$ | $A \wedge B$ | $\overline{A \wedge B}$ | $(A \wedge B) \vee \overline{A \wedge B}$ |
 | --- | --- | ------------ | ----------------------- | ----------------------------------------- |
 | 0   | 0   | 0            | 1                       | 1                                         |
@@ -156,8 +169,10 @@ Erstellen Sie für die folgenden logischen Ausdrücke die Wahrheitstabelle!
 Die Verknüpfung c) ergibt für alle Kombinationen der Wahrheitswerte von A und B eine wahre Aussage. Man nennt sie deshalb auch **Tautologie**.
 
 > Eine **Tautologie** ist eine Aussagenverbindung, die unabhängig von den Wahrheitswerten ihrer Teilaussagen immer wahr ist.
+****************************************
 
-**Aufgabe 4**
+
+## Aufgabe 4
 
 Erstellen Sie aus den folgenden Wahrheitstabellen die disjunktive Normalform!
 
@@ -169,9 +184,16 @@ a)
 | 0   | 1   | 1   |
 | 1   | 0   | 1   |
 | 1   | 1   | 0   |
+
+[[!]]
+<script>
+  true;
+</script>
+****************************************
 **Lösung:** $X = (\overline A \wedge B) \vee (A \wedge \overline B)$ 
 
 > Diese Verknüpfung nennt man auch **Antivalenz (XOR)**. Sie wird mit $A \nsim B$ oder $A \nleftrightarrow B$ abgekürzt.
+****************************************
 
 b) 
 
@@ -181,28 +203,44 @@ b)
 | 0   | 1   | 0   |
 | 1   | 0   | 0   |
 | 1   | 1   | 1   |
+
+[[!]]
+<script>
+  true;
+</script>
+****************************************
 **Lösung:** $X= (\overline A \wedge \overline B) \vee (A \wedge B)$ 
 
 > Diese Verknüpfung nennt man auch **Äquivalenz (XNOR)**. Sie wird mit $A \sim B$ oder $A \leftrightarrow B$ abgekürzt.
+****************************************
 
-
-**Aufgabe 4**
+## Aufgabe 5
 
 Weisen Sie die folgenden Tautologien nach! Benutzen Sie dazu die Wahrheitstabelle der Äquivalenz
 
 a)  $\overline{A \wedge B} \leftrightarrow \bar{A} \vee \bar{B}$
 
+
+[[!]]
+<script>
+  true;
+</script>
+****************************************
 | $A$ | $B$ | $\bar{A}$ | $\bar{B}$ | $\overline{A \wedge B}$ | $\bar{A} \vee \bar{B}$ | $\overline{A \wedge B} \leftrightarrow \bar{A} \vee \bar{B}$ |
 | --- | --- | --------- | --------- | ----------------------- | ---------------------- | ------------------------------------------------------------ |
 | 0   | 0   | 1         | 1         | 1                       | 1                      | 1                                                            |
 | 0   | 1   | 1         | 0         | 1                       | 1                      | 1                                                            |
 | 1   | 0   | 0         | 1         | 1                       | 1                      | 1                                                            |
 | 1   | 1   | 0         | 0         | 0                       | 0                      | 1                                                            |
-
+****************************************
 
 b) $\overline{A \vee B} \leftrightarrow \bar{A} \wedge \bar{B}$
 
-
+[[!]]
+<script>
+  true;
+</script>
+****************************************
 | $A$ | $B$ | $\bar{A}$ | $\bar{B}$ | $\overline{A \vee B}$ | $\bar{A} \wedge \bar{B}$ | $\overline{A \vee B} \leftrightarrow \bar{A} \wedge \bar{B}$ |
 | --- | --- | --------- | --------- | --------------------- | ------------------------ | ------------------------------------------------------------ |
 | 0   | 0   | 1         | 1         | 1                     | 1                        | 1                                                            |
@@ -211,4 +249,5 @@ b) $\overline{A \vee B} \leftrightarrow \bar{A} \wedge \bar{B}$
 | 1   | 1   | 0         | 0         | 0                     | 0                        | 1                                                            |
 
 
-Die Tautologien in a) und b) nennt man auch de **Morgansche Regeln**.
+Die Tautologien in a) und b) nennt man auch de **de Morgansche Regeln**.
+****************************************
