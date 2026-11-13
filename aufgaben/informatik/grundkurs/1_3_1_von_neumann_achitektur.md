@@ -58,47 +58,83 @@ Ergänzen Sie die Prinzipien der Von-Neumann-Architektur!
 
 a) Dem **Rechenwerk** (ALU - Arithmetic Logic Unit) mit der Aufgabe
 
+
+[[!]]
+<script>
+  true;
+</script>
+****************************************
 - Durchführung arithmetischer Operationen (z. B. Addieren, Subtrahieren, Multiplizieren, Dividieren)
 - Durchführung logischer Verknüpfungen und Vergleiche (z. B. UND, ODER, NICHT, Größer-/Kleiner-Vergleiche)
+****************************************
+
 
 b) Dem **Steuerwerk** (Control Unit) mit der Aufgabe
 
+[[!]]
+<script>
+  true;
+</script>
+****************************************
 - Steuerung und Koordination aller Abläufe im Rechner
 - Holen, Dekodieren und Ausführen von Befehlen
 - Ansteuerung der einzelnen Funktionseinheiten
+****************************************
 
 c) Dem **Speicherwerk** (Memory Unit) mit der Aufgabe
 
+[[!]]
+<script>
+  true;
+</script>
+****************************************
 - Speicherung von Programmen, Daten und Zwischenergebnissen
 - Bereitstellung der gespeicherten Informationen für die Verarbeitung
+****************************************
+
 
 d) Dem **Eingabe- und Ausgabewerk** (I/O Unit) mit der Aufgabe
 
+[[!]]
+<script>
+  true;
+</script>
+****************************************
 - Aufnahme von Daten und Befehlen von außen (Eingabe)
 - Ausgabe von Verarbeitungsergebnissen an den Benutzer oder andere Systeme (Ausgabe)
+****************************************
 
 e) dem **Verbindungssystem** (Bussystem) mit der Aufgabe
 
+[[!]]
+<script>
+  true;
+</script>
+****************************************
 - Verbindung der einzelnen Funktionseinheiten des Rechners
 - Übertragung von Daten, Adressen und Steuersignalen zwischen den Komponenten
+****************************************
 
----
-
-**Aufgabe 4**
+## Aufgabe 4
 
 Aus den früheren Schuljahren kennen Sie das [EVA-Prinzip](https://www.herrmix.de/dokuwiki/doku.php?id=neuerlehrplan:klasse07:eva) .
 
 Ordnen Sie den im Beispiel beschriebenen Teilvorgängen ihre jeweilige Phase zu!
 
-![[neumann2.png]]
+![](./images/neumann2.png)
 
 
 **Beispiel:** Elektronische Kasse eines Einkaufsmarktes
 
+
+
+
+
+
 | **Teilvorgang (Elektronische Kasse)**                                                                                                                      | **Phase:** |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
-| Mit einem Strichcodeleser werden die Artikel des Kunden erfasst und an die Computerkasse übertragen.                                                       | A          |
-| Die Gesamtsumme wird auf ein Blatt Papier ausgedruckt.                                                                                                     | E          |
-| Alle ermittelten Einzelpreise werden aufaddiert.                                                                                                           | D          |
-| Das System merkt zu jedem Artikel den dazu ermittelten Preis.                                                                                              | C          |
-| Die elektronische Kasse prüft, ob mit den gescannten Daten gearbeitet werden kann, oder ob das System gerade mit anderen Arbeitsvorgängen ausgelastet ist. | B          |
+| Mit einem Strichcodeleser werden die Artikel des Kunden erfasst und an die Computerkasse übertragen.                                                       | [[A]]          |
+| Die Gesamtsumme wird auf ein Blatt Papier ausgedruckt.                                                                                                     | [[E]]          |
+| Alle ermittelten Einzelpreise werden aufaddiert.                                                                                                           | [[D]]          |
+| Das System merkt zu jedem Artikel den dazu ermittelten Preis.                                                                                              | [[C]]          |
+| Die elektronische Kasse prüft, ob mit den gescannten Daten gearbeitet werden kann, oder ob das System gerade mit anderen Arbeitsvorgängen ausgelastet ist. | [[B]]          |
