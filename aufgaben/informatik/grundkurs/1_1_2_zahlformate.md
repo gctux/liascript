@@ -19,9 +19,9 @@ script:   https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js
 -->
 
 
-# 1.1.2 Zahlsysteme - Aufgaben
+# 1.1.2 Zahlformate - Aufgaben
 
-Auf dieser Seite finden Sie Aufgaben zum Thema Zahlsyssteme für den Informatik GK Klasse 11 - Sachsen mit interaktiver Lösungseingabe bzw. Anzeigemöglichkeit der Lösung.
+Auf dieser Seite finden Sie Aufgaben zum Thema Zahlformate für den Informatik GK Klasse 11 - Sachsen mit interaktiver Lösungseingabe bzw. Anzeigemöglichkeit der Lösung.
 
 ## Aufgabe 1
 Führen Sie die folgenden Additionen im Dualsystem durch:
