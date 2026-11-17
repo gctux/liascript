@@ -152,7 +152,7 @@ x = 3
 y = 4
 s = summe(x,y)
 print("Die Summe von",x,"und",y,"ist",s,".")
- 
+
 n = 8
 m = 9
 print("Die Summe von",n,"und",m,"ist",summe(n,m),".")
