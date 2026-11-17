@@ -104,7 +104,7 @@ def funktion():
     l = 3 # lokale Variable
     g = g + 3 # g wird um 3 erhöht
     print(l+g)
-    
+
 g = 3 # Definition globale Variable
 
 funktion() # Ausgabe 9
@@ -126,7 +126,7 @@ funktion() # Ausgabe 9
 ```python
 def summe(a,b):
     print("Summe von",a,"und",b,":",a+b)
- 
+
 summe(3,4)
 x=8
 y=9
@@ -147,7 +147,7 @@ Summe von 8 und 9 : 17
 ```python
 def summe(a,b):
     return a+b
- 
+
 x = 3
 y = 4
 s = summe(x,y)
