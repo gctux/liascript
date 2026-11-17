@@ -15,6 +15,7 @@ link:     https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css
 
 script:   https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js
 
+import: https://raw.githubusercontent.com/LiaTemplates/Pyodide/master/README.md
 -->
 
 # 2.3.1 Wiederholung Funktionen
@@ -50,9 +51,9 @@ trennlinie()
 print("Hallo",name,"du hast einen schönen Namen")
 trennlinie()
 
-"Programm beendet"
-```
 
+```
+@Pyodide.eval
 
 Ausgabe des Beispiels:
 
@@ -79,6 +80,7 @@ print("Wert von i:",i)
 test()
 print("Wert von i:",i)
 ```
+@Pyodide.eval
 
 bei der Ausgabe des Programms ergibt sich das Folgende:
 
@@ -109,6 +111,7 @@ g = 3 # Definition globale Variable
 
 funktion() # Ausgabe 9
 ```
+@Pyodide.eval
 
 ### Vor- und Nachteile lokaler und globaler Variablen
 
@@ -132,6 +135,7 @@ x=8
 y=9
 summe(x,y)
 ```
+@Pyodide.eval
 
 **Ausgabe:**
 
@@ -157,6 +161,7 @@ n = 8
 m = 9
 print("Die Summe von",n,"und",m,"ist",summe(n,m),".")
 ```
+@Pyodide.eval
 
 **Ausgabe:**
 
@@ -177,6 +182,7 @@ print(summe())
 print(summe(3))
 print(summe(3,4))
 ```
+@Pyodide.eval
 
 **Ausgabe:**
 
@@ -195,6 +201,7 @@ def summe(a ,b = 1):
 print(summe(3))
 print(summe(3,4))
 ```
+@Pyodide.eval
 
 **Ausgabe:**
 
