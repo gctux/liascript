@@ -15,10 +15,6 @@ link:     https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css
 
 script:   https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js
 
-
-import: https://raw.githubusercontent.com/LiaTemplates/Pyodide/master/README.md
-
-
 -->
 
 # 2.3.1 Wiederholung Funktionen
@@ -45,10 +41,18 @@ meineFunktion()
 **Beispiel:**
 
 ```python
-print("Hallo Welt!")
+def trennlinie():
+    print("###############################################")
+
+trennlinie()
+name = input("Dein Name: ")
+trennlinie()
+print("Hallo",name,"du hast einen schönen Namen")
+trennlinie()
+
+"Programm beendet"
 ```
 
-@Pyodide.eval
 
 Ausgabe des Beispiels:
 
@@ -60,4 +64,5 @@ Hallo Obiwan Kenobi du hast einen schönen Namen
 ###############################################
 ```
 
-
+> [!NOTE] Globale Variable:
+> Variable, die im Hauptprogramm definiert wird.
