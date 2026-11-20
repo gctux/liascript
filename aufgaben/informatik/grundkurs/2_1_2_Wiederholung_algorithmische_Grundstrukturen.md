@@ -15,7 +15,7 @@ link:     https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css
 
 script:   https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js
 
-
+import: https://raw.githubusercontent.com/LiaTemplates/Pyodide/master/README.md
 -->
 
 # 2.1.1 Aufgaben zur Wiederholung algorithmischer Grundstrukturen
@@ -55,6 +55,7 @@ else:
     f = (c*9/5)+32 
     print("Temperatur in F: ",round(f,1))
 ```
+@Pyodide.eval
 ****************************************
 
 
@@ -87,6 +88,7 @@ while True:
     if n == "N":
         break
 ```
+@Pyodide.eval
 ****************************************
 
 
@@ -123,6 +125,7 @@ while True:
     if n == "N":
         break
 ```
+@Pyodide.eval
 ****************************************
 
 
@@ -152,6 +155,7 @@ while zahl > 0:
     zahl = zahl // 10
 print("Quersumme:",quersumme)
 ```
+@Pyodide.eval
 ****************************************
 
 <br>
@@ -180,6 +184,7 @@ if z == 2:
 else:
     print("a ist  keine Primzahl!")
 ```
+@Pyodide.eval
 ****************************************
 
 <br>
@@ -219,6 +224,7 @@ for i in range(a,b):
     print(zk)
     z = 1
 ```
+@Pyodide.eval
 ****************************************
 
 <br><br><br>
