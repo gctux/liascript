@@ -15,7 +15,7 @@ link:     https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css
 
 script:   https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js
 
-
+import: https://raw.githubusercontent.com/LiaTemplates/Pyodide/master/README.md
 -->
 
 # 2.1.1 Aufgaben zu Zeichenketten in Python
@@ -50,6 +50,7 @@ print("c) Anzahl der Zeichen:", len(zeichenkette))
 print("d) Erstes Zeichen:",zeichenkette[0],", Letztes Zeichen:",zeichenkette[len(zeichenkette)-1])
 print("e) Zeichenkette mit vertauschten ersten und letzten Buchstaben:",zeichenkette[len(zeichenkette)-1]+zeichenkette[1:len(zeichenkette)-1]+zeichenkette[0])
 ```
+@Pyodide.eval
 ****************************************
 
 
@@ -73,6 +74,7 @@ if wort == rueckwaerts:
 else:
     print("Das Wort ist ein kein Pallindrom.")
 ```
+@Pyodide.eval
 ****************************************
 
 ## Aufgabe 3
@@ -109,5 +111,6 @@ else:
     print("Die Zeichenketten sind keine Anagramme.")
 
 ```
+@Pyodide.eval
 ****************************************
 

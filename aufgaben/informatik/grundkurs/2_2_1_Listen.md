@@ -15,6 +15,7 @@ link:     https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css
 
 script:   https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js
 
+import: https://raw.githubusercontent.com/LiaTemplates/Pyodide/master/README.md
 
 -->
 
@@ -169,6 +170,7 @@ while True:
     if (input("Noch ein Passwort? (j|n)")).lower() == "n":
         break
 ```
+@Pyodide.eval
 ****************************************
 
 
@@ -198,4 +200,5 @@ for i in range(1000):
 
 print(liste.count(1),"Gefangene kommen frei!")
 ```
+@Pyodide.eval
 ****************************************
