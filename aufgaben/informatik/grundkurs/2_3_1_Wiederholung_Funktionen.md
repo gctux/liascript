@@ -15,7 +15,7 @@ link:     https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css
 
 script:   https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js
 
-
+import: https://raw.githubusercontent.com/LiaTemplates/Pyodide/master/README.md
 -->
 
 # 2.3.1 Wiederholung Funktionen - Aufgaben
@@ -39,6 +39,7 @@ def drucke_zufallszahl():
     
 drucke_zufallszahl()
 ```
+@Pyodide.eval
 ****************************************
 
 
@@ -60,6 +61,7 @@ def zufallsliste():
     
 print(zufallsliste())
 ```
+@Pyodide.eval
 ****************************************
 
 - c) Erstellen Sie eine Funktion namens `gerade(zahl)`, die überprüft ob eine übergebene Zahl gerade oder ungerade ist und dies mit True oder False zurück gibt.
@@ -76,6 +78,7 @@ def gerade(zahl):
 print(gerade(3))
 print(gerade(4))
 ```
+@Pyodide.eval
 ****************************************
 
 - d) Erstellen Sie eine Funktion namens `pasch()`, die zwei Würfelzahlen zufällig erzeugt und prüft ob sich um einen Pasch handelt oder nicht. Zurück gegeben wird ob ein Pasch gewürfelt wurde (True) oder nicht (False).
@@ -95,6 +98,7 @@ def pasch():
     
 print(pasch())
 ```
+@Pyodide.eval
 ****************************************
 
 <br><br><br>
@@ -123,6 +127,7 @@ zahlen_eingeben()
 zahlen_tauschen(zahl1,zahl2)
 zahlen_ausgeben(zahl1,zahl2)
 ```
+@Pyodide.eval
 
 - a) Das Programm zum Tauschen von zwei Zahlenwerten liefert beim Ausführen eine Fehlermeldung. Warum?<details>
 <summary>Antwort anzeigen</summary>
@@ -157,6 +162,7 @@ zahl1, zahl2 = zahlen_eingeben()
 zahl1, zahl2 = zahlen_tauschen(zahl1,zahl2)
 zahlen_ausgeben(zahl1,zahl2)
 ```
+@Pyodide.eval
 ****************************************
 
 ## Aufgabe 3
@@ -187,6 +193,7 @@ def meineFunktion(a,b):
 
 print(meineFunktion(3,4))
 ```
+@Pyodide.eval
 ****************************************
 
 
@@ -203,6 +210,7 @@ meinFunktion()
 
 #Es soll eigentlich "Hallo Robert" ausgegeben werden.
 ```
+@Pyodide.eval
 
 [[!]]
 <script>
@@ -217,6 +225,7 @@ def meineFunktion(n):
 n = "Robert"
 meineFunktion(n)
 ```
+@Pyodide.eval
 ****************************************
 
 
@@ -232,6 +241,7 @@ def meineFunktion(x):
 anz = meineFunktion(66)
 print(anz)
 ```
+@Pyodide.eval
 
 [[!]]
 <script>
@@ -247,6 +257,7 @@ def meineFunktion(x):
 anz = meineFunktion([66])
 print(anz)
 ```
+@Pyodide.eval
 ****************************************
 
 d) 
@@ -259,6 +270,7 @@ def meine Funktion(n)
 erg = meine Funktion(45)
 print(erg)
 ```
+@Pyodide.eval
 
 [[!]]
 <script>
@@ -273,6 +285,7 @@ def meineFunktion(n):
 erg = meineFunktion(45)
 print(erg)
 ```
+@Pyodide.eval
 ****************************************
 
 e)
@@ -289,6 +302,7 @@ if meineFunktion(8,4):
 else:
     print("schade")
 ```
+@Pyodide.eval
 
 [[!]]
 <script>
@@ -307,6 +321,7 @@ if meineFunktion(8,4):
 else:
     print("schade")
 ```
+@Pyodide.eval
 ****************************************
 
 
@@ -321,6 +336,7 @@ def meineFunktion(x):
 meineFunktion(2)
 print(y)
 ```
+@Pyodide.eval
 
 [[!]]
 <script>
@@ -335,6 +351,7 @@ def meineFunktion(x):
 meineFunktion(2)
 print(y)
 ```
+@Pyodide.eval
 ****************************************
 
 
@@ -429,6 +446,7 @@ for i in range(100000,1000000):
 print("Länge der Zahlenliste:",len(zahlenliste))
 print("Länge der Primzahlenliste:",len(primzahlenliste))    
 ```
+@Pyodide.eval
 ****************************************
 
 
@@ -466,6 +484,7 @@ for a in range(1,10):
                                        if len(liste) == len(set(liste)):
                                            print(liste)
 ```
+@Pyodide.eval
 ****************************************
 
 ## Aufgabe 6
@@ -526,6 +545,7 @@ while liste2 != liste1:
 print(liste1, liste2)
 print("Anzahl Ziehungen:", ziehungen)
 ```
+@Pyodide.eval
 ****************************************
 
 
