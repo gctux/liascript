@@ -113,6 +113,7 @@ def ungerade_recursion(n):
 print(ungerade_iteration(3))
 print(ungerade_recursion(3))
 ```
+@Pyodide.eval
 
 ### Verallgemeinerung
 
@@ -141,9 +142,7 @@ def zahlenfolge_recursion(n):
 
 ## Vor und Nachteile
 
-### Iteration
-
-#### Vorteile
+### Iteration - Vorteile
 
 - Meist **speichersparender** als Rekursion
 - Kein Stack Overflow durch viele Wiederholungen
@@ -155,16 +154,14 @@ def zahlenfolge_recursion(n):
     - Verarbeitung großer Datenmengen
 - Abbruchbedingungen sind oft leichter zu kontrollieren
 
-#### Nachteile
+### Iteration - Nachteile
 
 - Bei verschachtelten Strukturen kann der Code unübersichtlich werden
 - Manche Probleme lassen sich rekursiv deutlich einfacher formulieren
 - Verschachtelte Schleifen können schwer verständlich und fehleranfällig sein
 - Verwaltung von Zuständen und Zwischenwerten kann zusätzlichen Code erfordern
 
-### Rekursion
-
-#### Vorteile
+### Rekursion - Vorteile
 
 - Oft **übersichtlicher und leichter verständlich** bei Problemen mit verschachtelten Strukturen
 - Geeignet für:
@@ -175,7 +172,7 @@ def zahlenfolge_recursion(n):
 - Kann mathematische Definitionen direkt abbilden
 - Häufig kürzerer und eleganterer Quellcode
 
-#### Nachteile
+### Rekursion - Nachteile
 
 - Verbraucht zusätzlichen **Speicher auf dem Aufrufstapel**
 - Gefahr eines **Stack Overflow**, wenn die Rekursion zu tief wird
