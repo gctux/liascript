@@ -258,7 +258,7 @@ while True:
 
 ```
 
-<details>
+Zur Lösung:<details>
 <summary>Antwort anzeigen</summary>
 <img src="./images/2_1_2_aufgabe2c.svg">
 </details>

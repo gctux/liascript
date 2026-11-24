@@ -27,9 +27,7 @@ Auf dieser Seite finden Sie Aufgaben zum Thema Zeichencodierung für den Informa
 
 ## Aufgabe 1
 
-Verschlüsseln Sie ein Wort selbst in ASCII-Codierung. Gehen Sie davon aus, dass das "A" die 65 ist und das "a" die 97. Berechne im Kopf die Dezimalzahlen für die Buchstaben deines Wortes. Rechne danach die Zahlen in Binärzahlen um.
-
-<details>
+Verschlüsseln Sie ein Wort selbst in ASCII-Codierung. Gehen Sie davon aus, dass das "A" die 65 ist und das "a" die 97. Berechne im Kopf die Dezimalzahlen für die Buchstaben deines Wortes. Rechne danach die Zahlen in Binärzahlen um.<details>
 <summary>Antwort anzeigen</summary>
 Lösung:  z.B. Apfel -> 65 112 102 101 108
 </details>
@@ -38,9 +36,7 @@ Lösung:  z.B. Apfel -> 65 112 102 101 108
 
 "Marsianer" benutzen ein Hexadezimalsystem und empfangen die folgende Nachricht:  
 52 65 74 74 75 6e 67 20 69 6e 20 53 69 63 68 74 3a 29  
-Wandeln Sie die Nachricht in das Dezimalsystem um und entschlüsseln Sie  den Text mit Hilfe einer ASCII- Tabelle.
-
-<details>
+Wandeln Sie die Nachricht in das Dezimalsystem um und entschlüsseln Sie  den Text mit Hilfe einer ASCII- Tabelle.<details>
 <summary>Antwort anzeigen</summary>
 Lösung "Rettung in Sicht:)"
 </details>

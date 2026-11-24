@@ -29,46 +29,34 @@ Auf dieser Seite finden Sie Aufgaben zum Thema Boolsche Algebra für den Informa
 
 Entscheiden Sie, ob die folgenden sprachlichen Gebilde Aussagen sind. Entscheiden Sie bei den Aussagen, ob diese wahr oder oder falsch sind.
 
-- a) Es gibt eine durch 2 teilbare Primzahl.
-
-<details>
+- a) Es gibt eine durch 2 teilbare Primzahl.<details>
 <summary>Antwort anzeigen</summary>
 wahre Aussage
 </details>
 
 
-- b) Die Zahl n ist durch 11 teilbar. 
-
-<details>
+- b) Die Zahl n ist durch 11 teilbar.<details>
 <summary>Antwort anzeigen</summary>
 keine Aussage (Aussageform)
 </details>
 
-- c) Alle Vögel können fliegen. 
-
-<details>
+- c) Alle Vögel können fliegen.<details>
 <summary>Antwort anzeigen</summary>
 falsche Aussage
 </details>
 
-- d) Braune Schuhe sind wärmer als im Winter. 
-
-<details>
+- d) Braune Schuhe sind wärmer als im Winter.<details>
 <summary>Antwort anzeigen</summary>
 keine Aussage 
 </details>
 
 
-- e) 3 + 3 = 33 
-
-<details>
+- e) 3 + 3 = 33<details>
 <summary>Antwort anzeigen</summary>
 falsche Aussage
 </details>
 
-- f) Es gibt keine von Null verschiedenen ganze Zahlen $a$, $b$ und $c$ , die die Gleichung $$a^n + b^n = c^n \text{ mit } n \in \mathbb{N} \text{ und } n>2 $$ erfüllen. 
-
-<details>
+- f) Es gibt keine von Null verschiedenen ganze Zahlen $a$, $b$ und $c$ , die die Gleichung $$a^n + b^n = c^n \text{ mit } n \in \mathbb{N} \text{ und } n>2 $$ erfüllen.<details>
 <summary>Antwort anzeigen</summary>
 wahre Aussage (Satz des Fermat)
 </details>
@@ -82,30 +70,22 @@ $B$: Die Sonne scheint.
 
 Formulieren Sie die folgenden Verknüpfungen von Aussagefunktionen in Worten:
 
-- a) $\overline{A} \vee B$ 
-
-<details>
+- a) $\overline{A} \vee B$<details>
 <summary>Antwort anzeigen</summary>
 Ich gehe nicht zur Schule oder die Sonne scheint.
 </details>
 
-- b) $A \wedge \overline{B}$ 
-
-<details>
+- b) $A \wedge \overline{B}$<details>
 <summary>Antwort anzeigen</summary>
 Ich gehe zur Schule und die Sonne scheint nicht.
 </details>
 
-- c) $\overline{A \vee B} \wedge A$ 
-
-<details>
+- c) $\overline{A \vee B} \wedge A$<details>
 <summary>Antwort anzeigen</summary>
 Es stimmt nicht, dass ich zur Schule gehe oder  die Sonne scheint, und ich gehe zur Schule. 
 </details>
 
-- d) $\overline{A \wedge B}$ 
-
-<details>
+- d) $\overline{A \wedge B}$<details>
 <summary>Antwort anzeigen</summary>
 Es stimmt nicht, dass ich zur Schule gehe und dass die Sonne scheint.
 </details>
