@@ -18,6 +18,7 @@ script:   https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js
 import: https://raw.githubusercontent.com/LiaTemplates/Pyodide/master/README.md
 -->
 
+
 # 2.3.1 Wiederholung Funktionen - Aufgaben
 
 Auf dieser Seite finden Sie Aufgaben zum Thema Wiederholung Funktionen für den Informatik GK Klasse 11 - Sachsen mit interaktiver Lösungseingabe bzw. Anzeigemöglichkeit der Lösung.
@@ -547,5 +548,6 @@ print("Anzahl Ziehungen:", ziehungen)
 ```
 @Pyodide.eval
 ****************************************
+
 
 
