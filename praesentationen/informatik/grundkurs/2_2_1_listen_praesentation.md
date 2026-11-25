@@ -125,3 +125,4 @@ for wert in ["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag
     print(wert)
 ```
 @Pyodide.eval
+
