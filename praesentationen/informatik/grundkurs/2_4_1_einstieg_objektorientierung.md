@@ -118,8 +118,8 @@ import: https://raw.githubusercontent.com/LiaTemplates/Pyodide/master/README.md
 
 ## Darstellung von Objekten und Klassen - UML
 
-<iframe src="./images/uml.pdf" width="100%" height="500px"></iframe>
 
+![](./images/uml.svg)
 
 ## Weitere Fachbegriffe
 
