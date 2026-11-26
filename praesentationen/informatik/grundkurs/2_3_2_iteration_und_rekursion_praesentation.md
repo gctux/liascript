@@ -9,7 +9,7 @@ edit: true
 
 tags: GK Informatik, Programmieren in Python
 
-comment: Aufgaben zum Thema Wiederholung Funktionen im GK Informatik.
+comment: Aufgaben zum Thema Iteration und Rekursion im GK Informatik.
 
 link:     https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css
 
