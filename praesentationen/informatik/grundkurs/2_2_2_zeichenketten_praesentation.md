@@ -64,5 +64,5 @@ print(satz)
 | split()   | Teilt den String anhand eines Trennzeichens in eine Liste auf      | `"a,b,c".split(",") # ["a", "b", "c"]`                    |
 | replace() | Ersetzt Teile des Strings durch einen anderen String               | `"Hallo Welt".replace("Welt", "Python") # "Hallo Python"` |
 | find()    | Findet die Position eines Teilstrings oder -1, wenn nicht gefunden | `"Hallo".find("ll") # 2`                                  |
-| count()   | Zählt, wie oft ein Teilstring vorkommt                             | `"Banane".count("a") # 3`                                 |
+| count()   | Zählt, wie oft ein Teilstring vorkommt                             | `"Banane".count("a") # 2`                                 |
 | sorted()  | Gibt eine alphabetisch sortierte Liste der Zeichen zurück          | `sorted("python") # ['h', 'n', 'o', 'p', 't', 'y']`       |
